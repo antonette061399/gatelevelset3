@@ -1,0 +1,11 @@
+module carrylook(A, B, Ci, C1);
+
+input A, B, Ci;
+output C1;
+wire Pi, Gi, X2, A2, O1;
+
+xor (Pi, A, B), (X2, Pi, Ci);
+and (Gi, A, B), (A2, Pi, Ci);
+or (C1, A2, Gi);
+
+endmodule
