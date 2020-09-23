@@ -1,0 +1,11 @@
+module singlebitfulladder(A, B, Ci, S, Co);
+
+input A, B, Ci;
+output S, Co;
+wire XO1, XO2, A1, OR;
+
+xor(XO1, A, B), (XO2, XO1, Ci);
+and(A1, A, Ci), (A2, A, B);
+or(OR, ACi, AB);
+
+endmodule
