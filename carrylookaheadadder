@@ -1,0 +1,11 @@
+module carrylookaheadadder(A, B, Ci, Si, Ca);
+
+input A, B, Ci;
+output Si, Ca;
+wire Pi, Gi, X2, A2, O1;
+
+xor(X1, A, B), (X2, Ci, Pi);
+and(A1, B, A), (A2, Pi, Ci);
+or(O1, PiCi, Gi);
+
+endmodule
